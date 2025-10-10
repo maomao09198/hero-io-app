@@ -1,0 +1,216 @@
+.app-details {
+  padding: 2rem 0 0;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* App Header */
+.app-header {
+  background: white;
+  padding: 3rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.app-basic-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.app-icon-large {
+  width: 120px;
+  height: 120px;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.app-title-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.developer {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* App Stats Section */
+.app-stats-section {
+  background: white;
+  padding: 2rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.install-btn {
+  display: block;
+  margin: 0 auto;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 250px;
+}
+
+.install-btn:hover:not(:disabled) {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.install-btn.installed {
+  background: #10b981;
+  cursor: not-allowed;
+}
+
+.install-btn.installing {
+  background: #6b7280;
+  cursor: not-allowed;
+}
+
+.install-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Ratings Section */
+.ratings-section {
+  background: white;
+  padding: 3rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ratings-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 2rem;
+}
+
+.chart-container {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 300px;
+}
+
+/* Description Section */
+.description-section {
+  background: white;
+  padding: 3rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.description-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.description-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.description-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Footer */
+.app-details-footer {
+  background: #1e293b;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #3b82f6;
+}
+
+.footer-content p {
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Toast */
+.toast.success {
+  background: #10b981;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .app-basic-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .app-title-section h1 {
+    font-size: 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+  }
+
+  .install-btn {
+    min-width: auto;
+    width: 90%;
+  }
+
+  .description-content {
+    padding: 0 1rem;
+  }
+}
