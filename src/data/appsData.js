@@ -1,7 +1,7 @@
 export const appsData = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=150&h=150&fit=crop",
+    image: "/images/apps/demo-app (1).webp",
     title: "Forest: Focus For Productivity",
     companyName: "FocusTech Inc",
     description: "Accurate weather forecasts with real-time updates and beautiful visuals. Get detailed information about temperature, humidity, wind speed, and precipitation for any location worldwide.",
@@ -19,7 +19,7 @@ export const appsData = [
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=150&h=150&fit=crop",
+    image: "/images/apps/demo-app (2).webp",
     title: "Photo Editor Pro",
     companyName: "Creative Studio",
     description: "Powerful photo editing tools with filters, effects, and advanced adjustments. Perfect for both beginners and professional photographers.",
@@ -37,7 +37,7 @@ export const appsData = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=150&h=150&fit=crop",
+    image: "/images/apps/demo-app (3).webp",
     title: "Fitness Tracker Plus",
     companyName: "HealthPlus",
     description: "Comprehensive fitness tracking with workout plans, calorie counter, and progress analytics. Stay motivated with personalized goals.",
@@ -55,7 +55,7 @@ export const appsData = [
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&h=150&fit=crop",
+    image: "/images/apps/demo-app (4).webp",
     title: "Finance Manager Pro",
     companyName: "MoneyTech",
     description: "Smart financial management with budget tracking, expense categorization, and investment insights. Take control of your finances.",
@@ -73,7 +73,7 @@ export const appsData = [
   },
   {
     id: 5,
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=150&h=150&fit=crop",
+    image: "/images/apps/demo-app (5).webp",
     title: "Music Stream Pro",
     companyName: "AudioWorks",
     description: "Stream millions of songs with high-quality audio, personalized playlists, and offline listening. Discover new music every day.",
@@ -91,7 +91,7 @@ export const appsData = [
   },
   {
     id: 6,
-    image: "https://images.unsplash.com/photo-1542744095-291d1f67b221?w=150&h=150&fit=crop",
+    image: "/images/apps/demo-app (6).webp",
     title: "Task Master Pro",
     companyName: "Productivity Labs",
     description: "Advanced task management with team collaboration, reminders, and progress tracking. Boost your productivity effortlessly.",
@@ -109,7 +109,7 @@ export const appsData = [
   },
   {
     id: 7,
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=150&h=150&fit=crop",
+    image: "/images/apps/demo-app (1).webp",
     title: "Language Learn Pro",
     companyName: "EduTech Global",
     description: "Interactive language learning with speech recognition, vocabulary builder, and cultural lessons. Learn 20+ languages.",
@@ -127,7 +127,7 @@ export const appsData = [
   },
   {
     id: 8,
-    image: "https://images.unsplash.com/photo-1542744095-291d1f67b221?w=150&h=150&fit=crop",
+    image: "/images/apps/demo-app (2).webp",
     title: "Social Connect Pro",
     companyName: "Social Networks Inc",
     description: "Connect with friends, share moments, and discover communities. The ultimate social networking experience.",
@@ -145,7 +145,7 @@ export const appsData = [
   },
   {
     id: 9,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&h=150&fit=crop",
+    image: "/images/apps/demo-app (3).webp",
     title: "Recipe Book Pro",
     companyName: "Foodie Tech",
     description: "Thousands of recipes with step-by-step instructions, video tutorials, and shopping list integration. Cook like a pro.",
@@ -163,7 +163,7 @@ export const appsData = [
   },
   {
     id: 10,
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=150&h=150&fit=crop",
+    image: "/images/apps/demo-app (4).webp",
     title: "Travel Guide Pro",
     companyName: "Wanderlust Apps",
     description: "Comprehensive travel planning with maps, reviews, booking integration, and offline access. Your perfect travel companion.",
@@ -181,7 +181,7 @@ export const appsData = [
   },
   {
     id: 11,
-    image: "https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?w=150&h=150&fit=crop",
+    image: "/images/apps/demo-app (5).webp",
     title: "News Hub Pro",
     companyName: "Media Networks",
     description: "Personalized news feed from trusted sources worldwide. Stay informed with real-time updates and curated content.",
@@ -199,7 +199,7 @@ export const appsData = [
   },
   {
     id: 12,
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=150&h=150&fit=crop",
+    image: "/images/apps/demo-app (6).webp",
     title: "Gaming Hub Pro",
     companyName: "Game Studios",
     description: "Discover and play thousands of mobile games. Connect with friends, join tournaments, and track your achievements.",

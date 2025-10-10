@@ -7,7 +7,11 @@ const ErrorPage = () => {
     <div className="error-page">
       <div className="container">
         <div className="error-content">
-          <div className="error-icon">404</div>
+          <img 
+            src="/images/errors/error-404.png" 
+            alt="404 Page Not Found" 
+            className="error-image"
+          />
           <h1>Oops, page not found!</h1>
           <p className="error-message">
             The page you are looking for is not available.

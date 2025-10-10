@@ -87,14 +87,17 @@ const AppDetails = () => {
         <section className="app-stats-section">
           <div className="stats-grid">
             <div className="stat-item">
+              <img src="/images/icons/icon-downloads.png" alt="Downloads" className="stat-icon" />
               <div className="stat-value">{formatDownloads(app.downloads)}</div>
               <div className="stat-label">Downloads</div>
             </div>
             <div className="stat-item">
+              <img src="/images/icons/icon-ratings.png" alt="Ratings" className="stat-icon" />
               <div className="stat-value">{app.ratingAvg}</div>
               <div className="stat-label">Average Ratings</div>
             </div>
             <div className="stat-item">
+              <img src="/images/icons/icon-review.png" alt="Reviews" className="stat-icon" />
               <div className="stat-value">{app.reviews >= 1000 ? (app.reviews / 1000).toFixed(0) + 'K' : app.reviews}</div>
               <div className="stat-label">Total Reviews</div>
             </div>

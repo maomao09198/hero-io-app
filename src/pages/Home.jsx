@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { appsData } from '../data/appsData';
-import AppCard from '../components/AppCard';
 import './Home.css';
 
 const Home = () => {
@@ -9,27 +8,32 @@ const Home = () => {
 
   return (
     <div className="home">
-      {/* Hero Banner */}
-      <section className="hero-banner">
-        <div className="container">
-          <div className="hero-content">
-            <h1>We Build Productive Apps</h1>
-            <p className="hero-subtitle">
-              As I BID, we can increase age assigned to the average M senior months per year scoring.<br />
-              Our goal is to turn our team into digital awareness on a key issue on trends.
-            </p>
-            <div className="hero-stats">
-              <div className="stat-item">
-                <div className="stat-number">29.6M</div>
-                <div className="stat-label">Downloads</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">90.6K</div>
-                <div className="stat-label">Reviews</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">132+</div>
-                <div className="stat-label">Apps</div>
+      {/* Hero Banner with Background Image */}
+      <section 
+        className="hero-banner"
+        style={{ backgroundImage: "url('/images/banners/hero.png')" }}
+      >
+        <div className="hero-overlay">
+          <div className="container">
+            <div className="hero-content">
+              <h1>We Build Productive Apps</h1>
+              <p className="hero-subtitle">
+                As I BID, we can increase age assigned to the average M senior months per year scoring.<br />
+                Our goal is to turn our team into digital awareness on a key issue on trends.
+              </p>
+              <div className="hero-stats">
+                <div className="stat-item">
+                  <div className="stat-number">29.6M</div>
+                  <div className="stat-label">Downloads</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-number">90.6K</div>
+                  <div className="stat-label">Reviews</div>
+                </div>
+                <div className="stat-item">
+                  <div className="stat-number">132+</div>
+                  <div className="stat-label">Apps</div>
+                </div>
               </div>
             </div>
           </div>
