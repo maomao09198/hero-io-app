@@ -6,6 +6,14 @@ import './Home.css';
 const Home = () => {
   const trendingApps = appsData.slice(0, 8);
 
+  const handleAppStore = () => {
+    window.open('https://www.apple.com/app-store/', '_blank');
+  };
+
+  const handleGooglePlay = () => {
+    window.open('https://play.google.com/store', '_blank');
+  };
+
   return (
     <div className="home">
       {/* Hero Banner */}
@@ -16,16 +24,32 @@ const Home = () => {
             <p className="hero-subtitle">
               At HERO.IO ,we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.
             </p>
-            <div className="hero-stats">
-              <div className="stat-item">
-                <div className="stat-number">29.6M</div>
-                <div className="stat-label">Downloads</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">90.6K</div>
-                <div className="stat-label">Reviews</div>
-              </div>
             
+            {/* App Store Buttons */}
+            <div className="app-store-buttons">
+              <button className="store-btn app-store-btn" onClick={handleAppStore}>
+                <div className="store-icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                  </svg>
+                </div>
+                <div className="store-text">
+                  <div className="store-label">Download on the</div>
+                  <div className="store-name">App Store</div>
+                </div>
+              </button>
+
+              <button className="store-btn google-play-btn" onClick={handleGooglePlay}>
+                <div className="store-icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M3 20.5v-17c0-.58.47-1 1-1h1v18H4c-.53 0-1-.42-1-1m16-9.5v-1.5c0-1.38-1.12-2.5-2.5-2.5H12v5h4.5c1.38 0 2.5-1.12 2.5-2.5m0 4.5c0 1.38-1.12 2.5-2.5 2.5H12v5h4.5c1.38 0 2.5-1.12 2.5-2.5v-5M12 11H5v2h7v-2m0 4H5v2h7v-2m9-4c0 1.38-1.12 2.5-2.5 2.5H16v-5h2.5c1.38 0 2.5 1.12 2.5 2.5"/>
+                  </svg>
+                </div>
+                <div className="store-text">
+                  <div className="store-label">Get it on</div>
+                  <div className="store-name">Google Play</div>
+                </div>
+              </button>
             </div>
             
             {/* Hero Image below the text */}
@@ -40,30 +64,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="features-section">
-        <div className="container">
-          <div className="features-grid">
-            <div className="feature-card">
-              <div className="feature-icon">🚀</div>
-              <h3>Single Play</h3>
-              <p>Age Start</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">🎯</div>
-              <h3>Change your Game</h3>
-              <p>Transform your experience</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">🛡️</div>
-              <h3>Game Supporting</h3>
-              <p>24/7 support</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Trusted Section */}
+   
+     {/* Trusted Section */}
       <section className="trusted-section">
         <div className="container">
           <h2>Trusted By Millions, Built For You</h2>
