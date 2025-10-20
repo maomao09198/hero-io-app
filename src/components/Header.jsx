@@ -16,10 +16,10 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="header-content">
-          <Link to="/" className="logo">
-            <img src="/images/icons/logo.png" alt="Hero.IO" className="logo-image" />
-            <h2>Hero.IO</h2>
-          </Link>
+          <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+  <img src="/images/icons/logo.png" alt="Hero.IO" className="logo-image" />
+  <h2 style={{ margin: 0 }}>Hero.IO</h2>
+</Link>
           
           <nav className="nav">
             <Link to="/" className={`nav-link ${isActive('/')}`}>
