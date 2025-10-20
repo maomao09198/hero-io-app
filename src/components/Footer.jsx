@@ -6,27 +6,18 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <div className="footer-section">
-            <h3>Hero.IO</h3>
-            <p>Discover amazing applications for your digital life.</p>
+          <div className="footer-section" style={{ display: 'flex'}}>
+            <img src="/images/icons/logo.png" alt="Hero.IO" className="logo-image" />
+  <h2 style={{ margin: 0 }}>Hero.IO</h2>
+            
           </div>
           
           <div className="footer-section">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/apps">Apps</a></li>
-              <li><a href="/installation">My Installation</a></li>
-            </ul>
+            
           </div>
           
           <div className="footer-section">
-            <h4>Support</h4>
-            <ul>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
+            
           </div>
           
          <div className="footer-section">

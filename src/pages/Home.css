@@ -293,7 +293,7 @@
 
 .app-stats {
   display: flex;
-  gap: 1rem;
+  gap: rem;
   font-size: 0.9rem;
   color: #64748b;
 }
@@ -308,18 +308,8 @@
   gap: 0.25rem;
 }
 
-.app-growth {
-  margin-left: auto;
-}
 
-.growth-badge {
-  background: #10b981;
-  color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+
 
 /* Mobile Responsive */
 @media (max-width: 768px) {

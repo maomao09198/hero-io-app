@@ -114,17 +114,41 @@ const Home = () => {
                 <img src={app.image} alt={app.title} className="app-image" />
                 <div className="app-info">
                   <h3 className="app-title">{app.title}</h3>
-                  <div className="app-stats">
-                    <span className="downloads">{app.downloads >= 1000000 
-                      ? (app.downloads / 1000000).toFixed(1) + 'M' 
-                      : (app.downloads / 1000).toFixed(1) + 'K'
-                    }</span>
-                    <span className="rating">⭐ {app.ratingAvg}</span>
-                  </div>
+                 <div
+  className="app-stats"
+  style={{ display: "flex", justifyContent: "space-between", gap: "10px" }}
+>
+  {/* Downloads Box */}
+  <span
+    className="downloads"
+    style={{
+      backgroundColor: "#f5f5f5",
+      padding: "5px 10px",
+      borderRadius: "8px",
+      fontSize: "14px",
+    }}
+  >
+    {app.downloads >= 1000000
+      ? (app.downloads / 1000000).toFixed(1) + "M"
+      : (app.downloads / 1000).toFixed(1) + "K"}
+  </span>
+
+  {/* Rating Box */}
+  <span
+    className="rating"
+    style={{
+      backgroundColor: "#f5f5f5",
+      padding: "5px 10px",
+      borderRadius: "8px",
+      fontSize: "14px",
+    }}
+  >
+    ⭐ {app.ratingAvg}
+  </span>
+</div>
+
                 </div>
-                <div className="app-growth">
-                  <span className="growth-badge">+15%</span>
-                </div>
+               
               </div>
             ))}
           </div>
