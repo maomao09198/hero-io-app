@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { appsData } from '../data/appsData';
 import './Home.css';
+import AppCard from '../components/AppCard';
 
 const Home = () => {
   const trendingApps = appsData.slice(0, 8);
@@ -99,13 +100,11 @@ const Home = () => {
       <section className="trending-apps">
         <div className="container">
           <div className="section-header">
-            <div className="section-title">
-              <h2>Trending Apps</h2>
-              <p>Explore all Trending Apps on the Internet coming back to us!</p>
-            </div>
-            <Link to="/apps" className="view-all-btn">
-              View All
-            </Link>
+            <div className="section-title" style={{ textAlign: "center",width: "100%" }}>
+  <h2>Trending Apps</h2>
+  <p>Explore all Trending Apps on the Internet coming back to us!</p>
+</div>
+            
           </div>
           
           <div className="trending-grid">
@@ -129,7 +128,16 @@ const Home = () => {
               </div>
             ))}
           </div>
+   <Link
+  to="/apps"
+  className="view-all-btn"
+  style={{ display: "block", margin: "0 auto", width: "fit-content" }}
+>
+  View All
+</Link>
+
         </div>
+        
       </section>
     </div>
   );
