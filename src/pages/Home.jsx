@@ -8,33 +8,33 @@ const Home = () => {
 
   return (
     <div className="home">
-      {/* Hero Banner with Background Image */}
-      <section 
-        className="hero-banner"
-        style={{ backgroundImage: "url('/images/banners/hero.png')" }}
-      >
-        <div className="hero-overlay">
-          <div className="container">
-            <div className="hero-content">
-              <h1>We Build Productive Apps</h1>
-              <p className="hero-subtitle">
-                As I BID, we can increase age assigned to the average M senior months per year scoring.<br />
-                Our goal is to turn our team into digital awareness on a key issue on trends.
-              </p>
-              <div className="hero-stats">
-                <div className="stat-item">
-                  <div className="stat-number">29.6M</div>
-                  <div className="stat-label">Downloads</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-number">90.6K</div>
-                  <div className="stat-label">Reviews</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-number">132+</div>
-                  <div className="stat-label">Apps</div>
-                </div>
+      {/* Hero Banner */}
+      <section className="hero-banner">
+        <div className="container">
+          <div className="hero-content">
+            <h1>We Build <br/><span style={{ color: "#632EE3" }}>Productive</span> Apps</h1>
+            <p className="hero-subtitle">
+              At HERO.IO ,we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.
+            </p>
+            <div className="hero-stats">
+              <div className="stat-item">
+                <div className="stat-number">29.6M</div>
+                <div className="stat-label">Downloads</div>
               </div>
+              <div className="stat-item">
+                <div className="stat-number">90.6K</div>
+                <div className="stat-label">Reviews</div>
+              </div>
+            
+            </div>
+            
+            {/* Hero Image below the text */}
+            <div className="hero-image-container">
+              <img 
+                src="/images/banners/hero.png" 
+                alt="Hero Banner" 
+                className="hero-image"
+              />
             </div>
           </div>
         </div>
