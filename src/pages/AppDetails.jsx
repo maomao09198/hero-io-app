@@ -146,13 +146,8 @@ const AppDetails = () => {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="app-details-footer">
-          <div className="footer-content">
-            <h3>HERO.IO</h3>
-            <p>Copyright © 2024 – All right reserved</p>
-          </div>
-        </footer>
+    
+        
       </div>
     </div>
   );

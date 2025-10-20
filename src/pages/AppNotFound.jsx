@@ -8,7 +8,7 @@ const AppNotFound = () => {
       <div className="container">
         <div className="error-content">
           <img 
-            src="/images/errors/App-Error.png" 
+            src="./images/errors/App-Error.png" 
             alt="App Not Found" 
             className="error-image"
           />

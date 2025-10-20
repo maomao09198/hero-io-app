@@ -66,11 +66,34 @@ const Home = () => {
 
    
      {/* Trusted Section */}
-      <section className="trusted-section">
-        <div className="container">
-          <h2>Trusted By Millions, Built For You</h2>
+        <section class="trust-section">
+        <div class="trust-headline">
+            <h1>Trusted By Millions, Built For You</h1>
+            
         </div>
-      </section>
+        
+        <div class="trust-stats">
+            <div class="stat-item">
+               <span class="stat-label" style={{ color: "#f6f4f9ff" }}>Countries</span>
+                <span class="stat-number" style={{ color: "#f6f4f9ff" }}>29.6M</span>
+                <span class="stat-label" style={{ color: "#f6f4f9ff" }}>Active Users</span>
+            </div>
+            
+            <div class="stat-item">
+               <span class="stat-label"style={{ color: "#f6f4f9ff" }}>Countries</span>
+                <span class="stat-number"style={{ color: "#f6f4f9ff" }}>900K</span>
+                <span class="stat-label"style={{ color: "#f6f4f9ff" }}>5-Star Reviews</span>
+            </div>
+            
+            <div class="stat-item">
+               <span class="stat-label"style={{ color: "#f6f4f9ff" }}>Countries</span>
+                <span class="stat-number"style={{ color: "#f6f4f9ff" }}>132+</span>
+                <span class="stat-label"style={{ color: "#f6f4f9ff" }}>Countries</span>
+            </div>
+        </div>
+        
+       
+    </section>
 
       {/* Trending Apps Section */}
       <section className="trending-apps">

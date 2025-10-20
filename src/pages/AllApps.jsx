@@ -2,6 +2,8 @@ import React, { useState, useMemo } from 'react';
 import { appsData } from '../data/appsData';
 import AppCard from '../components/AppCard';
 import './AllApps.css';
+import AppNotFound from "./AppNotFound";
+
 
 const AllApps = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -47,32 +49,21 @@ const AllApps = () => {
             />
             <span className="search-icon">🔍</span>
           </div>
-          <select
-            value={sortOrder}
-            onChange={(e) => setSortOrder(e.target.value)}
-            className="sort-dropdown"
-          >
-            <option value="">Sort by Downloads</option>
-            <option value="high-low">High - Low</option>
-            <option value="low-high">Low - High</option>
-          </select>
+         
         </section>
 
-        {/* Apps Grid Section */}
-        <section className="apps-grid-section">
-          {filteredAndSortedApps.length === 0 ? (
-            <div className="no-apps-found">
-              <h3>No Apps Found</h3>
-              <p>Try adjusting your search terms</p>
-            </div>
-          ) : (
-            <div className="apps-grid">
-              {filteredAndSortedApps.map(app => (
-                <AppCard key={app.id} app={app} />
-              ))}
-            </div>
-          )}
-        </section>
+      {/* Apps Grid Section */}
+<section className="apps-grid-section">
+  {filteredAndSortedApps.length === 0 ? (
+    <AppNotFound />
+  ) : (
+    <div className="apps-grid">
+      {filteredAndSortedApps.map(app => (
+        <AppCard key={app.id} app={app} />
+      ))}
+    </div>
+  )}
+</section>
       </div>
     </div>
   );
