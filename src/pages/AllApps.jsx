@@ -4,7 +4,6 @@ import AppCard from '../components/AppCard';
 import './AllApps.css';
 import AppNotFound from "./AppNotFound";
 
-
 const AllApps = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortOrder, setSortOrder] = useState('');
@@ -28,20 +27,15 @@ const AllApps = () => {
       <div className="container">
         {/* Header Section */}
         <section className="apps-header">
-          <div className="header-content">
-            
-            
-          </div>
           <h1>Our All Applications</h1>
           <p>Explore All Apps on the Market developed by us. We code for Millions</p>
-          <div className="apps-count">
-            ({filteredAndSortedApps.length}) Apps Found
-          </div>
-          
         </section>
 
         {/* Search and Filter Section */}
         <section className="search-filter-section">
+ <div className="apps-count">
+            ({filteredAndSortedApps.length}) Apps Found
+          </div>
           <div className="search-box">
             <input
               type="text"
@@ -52,21 +46,22 @@ const AllApps = () => {
             />
             <span className="search-icon">🔍</span>
           </div>
+          
          
         </section>
 
-      {/* Apps Grid Section */}
-<section className="apps-grid-section">
-  {filteredAndSortedApps.length === 0 ? (
-    <AppNotFound />
-  ) : (
-    <div className="apps-grid">
-      {filteredAndSortedApps.map(app => (
-        <AppCard key={app.id} app={app} />
-      ))}
-    </div>
-  )}
-</section>
+        {/* Apps Grid Section */}
+        <section className="apps-grid-section">
+          {filteredAndSortedApps.length === 0 ? (
+            <AppNotFound />
+          ) : (
+            <div className="apps-grid">
+              {filteredAndSortedApps.map(app => (
+                <AppCard key={app.id} app={app} />
+              ))}
+            </div>
+          )}
+        </section>
       </div>
     </div>
   );

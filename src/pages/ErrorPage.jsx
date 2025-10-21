@@ -16,13 +16,13 @@ const ErrorPage = () => {
           <p className="error-message">
             The page you are looking for is not available.
           </p>
-          <p className="date-note">On Date!</p>
+          
           
           <div className="brand-section">
-            <h3>HEIKU 0</h3>
+            
             <div className="action-links">
-              <Link to="/" className="action-link">Go Home</Link>
-              <Link to="/apps" className="action-link">Browse Apps</Link>
+              <Link to="/" className="action-link">Go Back</Link>
+             
             </div>
           </div>
         </div>

@@ -11,29 +11,20 @@
   padding: 2rem 0;
 }
 
-.header-content h1 {
+.apps-header h1 {
   font-size: 3rem;
   font-weight: bold;
   color: #1e293b;
   margin-bottom: 1rem;
 }
 
-.header-content p {
+.apps-header p {
   font-size: 1.1rem;
   color: #64748b;
   margin-bottom: 2rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.apps-count {
-  background: #3b82f6;
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border-radius: 20px;
-  font-weight: 600;
-  display: inline-block;
 }
 
 /* Search and Filter Section */
@@ -75,19 +66,13 @@
   color: #64748b;
 }
 
-.sort-dropdown {
-  padding: 1rem 1.5rem;
-  border: 2px solid #e2e8f0;
-  border-radius: 12px;
-  font-size: 1rem;
-  background: white;
-  cursor: pointer;
-  min-width: 200px;
-}
-
-.sort-dropdown:focus {
-  outline: none;
-  border-color: #3b82f6;
+.apps-count {
+  background: #3b82f6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 /* Apps Grid Section */
@@ -128,10 +113,17 @@
   .search-filter-section {
     flex-direction: column;
     align-items: stretch;
+    gap: 1rem;
   }
 
   .search-box {
     min-width: auto;
+  }
+
+  .apps-count {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .apps-grid {

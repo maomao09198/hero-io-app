@@ -6,6 +6,7 @@ const MyInstallation = () => {
   const { installedApps, uninstallApp } = useApps();
   const [showUninstallToast, setShowUninstallToast] = useState(false);
   const [uninstalledApp, setUninstalledApp] = useState('');
+  const [sortBy, setSortBy] = useState('');
 
   const handleUninstall = (app) => {
     uninstallApp(app.id);
@@ -14,8 +15,10 @@ const MyInstallation = () => {
     setTimeout(() => setShowUninstallToast(false), 3000);
   };
 
-  const formatSize = (size) => {
-    return `${size} MB`;
+  const formatDownloads = (downloads) => {
+    return downloads >= 1000000 
+      ? (downloads / 1000000).toFixed(1) + "M"
+      : (downloads / 1000).toFixed(1) + "K";
   };
 
   return (
@@ -29,28 +32,48 @@ const MyInstallation = () => {
 
         {/* Header Section */}
         <section className="installation-header">
-          <h1>Your Installed Apps</h1>
-          <div className="installation-stats">
-            <div className="stat">
-              <span className="stat-number">{installedApps.length}</span>
-              <span className="stat-label">Apps</span>
+          <div className="header-controls">
+            <div className="apps-count">
+              {installedApps.length} Apps Found
             </div>
-            <div className="stat">
-              <span className="stat-number">
-                {installedApps.reduce((total, app) => total + app.size, 0).toFixed(0)}
-              </span>
-              <span className="stat-label">MB Used</span>
+            <div className="sort-options">
+              <select 
+                value={sortBy} 
+                onChange={(e) => setSortBy(e.target.value)}
+                className="sort-dropdown"
+              >
+                <option value="">Sort By Size</option>
+                <option value="large">Large to Small</option>
+                <option value="small">Small to Large</option>
+              </select>
             </div>
           </div>
         </section>
+
+         {/* Header Section */}
+        <section
+  className="installation-header"
+  style={{
+    width: "100%",
+    textAlign: "center",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  }}
+>
+  <h1>Your Installed Apps</h1>
+  <p>Explore All Trending Apps on the Market developed by us</p>
+</section>
+
 
         {/* Apps List */}
         <section className="installed-apps-list">
           {installedApps.length === 0 ? (
             <div className="empty-state">
-              <div className="empty-icon">📱</div>
+             
               <h3>No Apps Installed</h3>
-              <p>Install some apps to see them here</p>
+              
               <a href="/apps" className="btn btn-primary">
                 Browse Apps
               </a>
@@ -63,10 +86,18 @@ const MyInstallation = () => {
                     <img src={app.image} alt={app.title} className="app-icon" />
                     <div className="app-details">
                       <h3 className="app-title">{app.title}</h3>
-                      <p className="app-company">{app.companyName}</p>
-                      <div className="app-meta">
-                        <span className="app-size">{formatSize(app.size)}</span>
-                        <span className="app-rating">⭐ {app.ratingAvg}</span>
+                      <div className="app-stats">
+                        <span className="stat-item"><svg 
+    width="16" 
+    height="16" 
+    viewBox="0 0 24 24" 
+    fill="#22C55E" 
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M12 3a1 1 0 0 1 1 1v9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586V4a1 1 0 0 1 1-1zm-7 14a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2H5z"/>
+  </svg> {formatDownloads(app.downloads)}</span>
+                        <span className="stat-item">⭐{app.ratingAvg}</span>
+                        <span className="stat-item">{app.size} MB</span>
                       </div>
                     </div>
                   </div>

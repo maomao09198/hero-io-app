@@ -6,44 +6,49 @@
 
 /* Header Section */
 .installation-header {
-  text-align: center;
-  margin-bottom: 3rem;
-  padding: 2rem 0;
-}
-
-.installation-header h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #1e293b;
   margin-bottom: 2rem;
+  padding: 1rem 0;
 }
 
-.installation-stats {
+.header-controls {
   display: flex;
-  justify-content: center;
-  gap: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
-.stat {
-  text-align: center;
+.apps-count {
+  background: #3b82f6;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
-.stat-number {
-  display: block;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #3b82f6;
-  margin-bottom: 0.5rem;
+.sort-options {
+  display: flex;
+  align-items: center;
 }
 
-.stat-label {
-  color: #64748b;
-  font-weight: 500;
+.sort-dropdown {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+.sort-dropdown:focus {
+  outline: none;
+  border-color: #3b82f6;
 }
 
 /* Apps List */
 .installed-apps-list {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -97,16 +102,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem; 
   background: white;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.installed-app-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-height: auto; 
+  height: auto; 
 }
 
 .app-main-info {
@@ -114,43 +115,20 @@
   align-items: center;
   gap: 1rem;
   flex: 1;
+  min-height: auto; 
 }
 
-.app-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 12px;
-  object-fit: cover;
+.app-details {
+  min-height: auto; 
 }
 
-.app-details h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #1e293b;
-  margin-bottom: 0.25rem;
-}
-
-.app-company {
-  color: #64748b;
+.app-stats {
+  display: flex;
+  gap: 1.5rem;
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-.app-meta {
-  display: flex;
-  gap: 1rem;
-  font-size: 0.85rem;
   color: #64748b;
-}
-
-.app-size {
-  font-weight: 500;
-}
-
-.app-rating {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
+  margin: 0; 
+  padding: 0; 
 }
 
 .app-actions {
@@ -158,7 +136,7 @@
 }
 
 .uninstall-btn {
-  background: #ef4444;
+  background: #00D390;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -175,13 +153,18 @@
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .installation-header h1 {
-    font-size: 2rem;
-  }
-
-  .installation-stats {
-    gap: 2rem;
+  .header-controls {
     flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .apps-count {
+    text-align: center;
+  }
+  
+  .sort-options {
+    justify-content: center;
   }
 
   .installed-app-item {
