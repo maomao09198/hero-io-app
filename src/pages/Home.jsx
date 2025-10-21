@@ -28,18 +28,12 @@ const Home = () => {
             
             {/* App Store Buttons */}
             <div className="app-store-buttons">
-              <button className="store-btn app-store-btn" onClick={handleAppStore}>
-              <div class="store-icon">
-                          <img src="/images/icons/Primary Button_2.png" alt="Hero.IO" className="logo-image" />
-                    </div>
-                
+              <button className="store-btn google-play-btn" onClick={handleAppStore}>
+                <img src="/images/icons/Primary Button_1.png" alt="Google Play" className="store-logo" />
               </button>
 
-              <button className="store-btn google-play-btn" onClick={handleGooglePlay}>
-                <div class="store-icon">
-     <img src="/images/icons/Primary Button_1.png" alt="Hero.IO" className="logo-image" />
-                    </div>
-                
+              <button className="store-btn app-store-btn" onClick={handleGooglePlay}>
+                <img src="/images/icons/Primary Button_2.png" alt="App Store" className="store-logo" />
               </button>
             </div>
             
@@ -55,46 +49,41 @@ const Home = () => {
         </div>
       </section>
 
-   
-     {/* Trusted Section */}
-        <section class="trust-section">
-        <div class="trust-headline">
-            <h1>Trusted By Millions, Built For You</h1>
-            
+      {/* Trusted Section */}
+      <section className="trust-section">
+        <div className="trust-headline">
+          <h1>Trusted By Millions, Built For You</h1>
         </div>
         
-        <div class="trust-stats">
-            <div class="stat-item">
-               <span class="stat-label" style={{ color: "#f6f4f9ff" }}>Countries</span>
-                <span class="stat-number" style={{ color: "#f6f4f9ff" }}>29.6M</span>
-                <span class="stat-label" style={{ color: "#f6f4f9ff" }}>Active Users</span>
-            </div>
-            
-            <div class="stat-item">
-               <span class="stat-label"style={{ color: "#f6f4f9ff" }}>Countries</span>
-                <span class="stat-number"style={{ color: "#f6f4f9ff" }}>900K</span>
-                <span class="stat-label"style={{ color: "#f6f4f9ff" }}>5-Star Reviews</span>
-            </div>
-            
-            <div class="stat-item">
-               <span class="stat-label"style={{ color: "#f6f4f9ff" }}>Countries</span>
-                <span class="stat-number"style={{ color: "#f6f4f9ff" }}>132+</span>
-                <span class="stat-label"style={{ color: "#f6f4f9ff" }}>Countries</span>
-            </div>
+        <div className="trust-stats">
+          <div className="stat-item">
+            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>Countries</span>
+            <span className="stat-number" style={{ color: "#f6f4f9ff" }}>29.6M</span>
+            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>Active Users</span>
+          </div>
+          
+          <div className="stat-item">
+            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>Countries</span>
+            <span className="stat-number" style={{ color: "#f6f4f9ff" }}>900K</span>
+            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>5-Star Reviews</span>
+          </div>
+          
+          <div className="stat-item">
+            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>Countries</span>
+            <span className="stat-number" style={{ color: "#f6f4f9ff" }}>132+</span>
+            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>Countries</span>
+          </div>
         </div>
-        
-       
-    </section>
+      </section>
 
       {/* Trending Apps Section */}
       <section className="trending-apps">
         <div className="container">
           <div className="section-header">
-            <div className="section-title" style={{ textAlign: "center",width: "100%" }}>
-  <h2>Trending Apps</h2>
-  <p>Explore all Trending Apps on the Internet coming back to us!</p>
-</div>
-            
+            <div className="section-title" style={{ textAlign: "center", width: "100%" }}>
+              <h2>Trending Apps</h2>
+              <p>Explore all Trending Apps on the Internet coming back to us!</p>
+            </div>
           </div>
           
           <div className="trending-grid">
@@ -104,54 +93,50 @@ const Home = () => {
                 <img src={app.image} alt={app.title} className="app-image" />
                 <div className="app-info">
                   <h3 className="app-title">{app.title}</h3>
-                 <div
-  className="app-stats"
-  style={{ display: "flex", justifyContent: "space-between", gap: "10px" }}
->
-  {/* Downloads Box */}
-  <span
-    className="downloads"
-    style={{
-      backgroundColor: "#f5f5f5",
-      padding: "5px 10px",
-      borderRadius: "8px",
-      fontSize: "14px",
-    }}
-  >
-    {app.downloads >= 1000000
-      ? (app.downloads / 1000000).toFixed(1) + "M"
-      : (app.downloads / 1000).toFixed(1) + "K"}
-  </span>
+                  <div
+                    className="app-stats"
+                    style={{ display: "flex", justifyContent: "space-between", gap: "10px" }}
+                  >
+                    {/* Downloads Box */}
+                    <span
+                      className="downloads"
+                      style={{
+                        backgroundColor: "#f5f5f5",
+                        padding: "5px 10px",
+                        borderRadius: "8px",
+                        fontSize: "14px",
+                      }}
+                    >
+                      {app.downloads >= 1000000
+                        ? (app.downloads / 1000000).toFixed(1) + "M"
+                        : (app.downloads / 1000).toFixed(1) + "K"}
+                    </span>
 
-  {/* Rating Box */}
-  <span
-    className="rating"
-    style={{
-      backgroundColor: "#f5f5f5",
-      padding: "5px 10px",
-      borderRadius: "8px",
-      fontSize: "14px",
-    }}
-  >
-    ⭐ {app.ratingAvg}
-  </span>
-</div>
-
+                    {/* Rating Box */}
+                    <span
+                      className="rating"
+                      style={{
+                        backgroundColor: "#f5f5f5",
+                        padding: "5px 10px",
+                        borderRadius: "8px",
+                        fontSize: "14px",
+                      }}
+                    >
+                      ⭐ {app.ratingAvg}
+                    </span>
+                  </div>
                 </div>
-               
               </div>
             ))}
           </div>
-   <Link
-  to="/apps"
-  className="view-all-btn"
-  style={{ display: "block", margin: "0 auto", width: "fit-content" }}
->
-  View All
-</Link>
-
+          <Link
+            to="/apps"
+            className="view-all-btn"
+            style={{ display: "block", margin: "0 auto", width: "fit-content" }}
+          >
+            View All
+          </Link>
         </div>
-        
       </section>
     </div>
   );
