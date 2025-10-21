@@ -1,110 +1,61 @@
 .error-page {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
-  padding: 2rem 0;
-  background: #f8fafc;
-}
-
-.error-content {
+  min-height: 100vh;
   text-align: center;
-  max-width: 500px;
-  margin: 0 auto;
-  background: white;
-  padding: 3rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e2e8f0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f6f5f8 100%);
+  color: rgb(10, 10, 10);
 }
 
-.error-icon {
-  font-size: 4rem;
-  font-weight: bold;
-  color: #3b82f6;
+.error-image {
+  width: 280px;
+  max-width: 80%;
   margin-bottom: 2rem;
 }
 
-.error-content h1 {
-  font-size: 2rem;
+.error-page h1 {
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #1e293b;
   margin-bottom: 1rem;
-  line-height: 1.2;
 }
 
 .error-message {
   font-size: 1.1rem;
-  color: #64748b;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-.date-note {
-  color: #94a3b8;
-  font-style: italic;
-  margin-bottom: 2.5rem;
-  font-size: 1rem;
-}
-
-.brand-section {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e2e8f0;
-}
-
-.brand-section h3 {
-  font-size: 1.5rem;
-  color: #1e293b;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #615e5e;
 }
 
 .action-links {
   display: flex;
-  gap: 1rem;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .action-link {
-  background: #9F62F2;
+  background: #632EE3;
   color: white;
   padding: 0.75rem 1.5rem;
-  
   text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s ease;
-  min-width: 120px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .action-link:hover {
-  background: #2563eb;
+  background: #EDE9FE;
   transform: translateY(-2px);
 }
 
-/* Mobile Responsive */
+/* Mobile */
 @media (max-width: 768px) {
-  .error-content {
-    padding: 2rem 1.5rem;
-    margin: 1rem;
+  .error-image {
+    width: 200px;
   }
 
-  .error-icon {
-    font-size: 3rem;
-  }
-
-  .error-content h1 {
-    font-size: 1.75rem;
-  }
-
-  .action-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .action-link {
-    width: 100%;
-    max-width: 200px;
+  .error-page h1 {
+    font-size: 2rem;
   }
 }

@@ -9,39 +9,27 @@
 
 .error-content {
   text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  background: white;
-  padding: 3rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e2e8f0;
+  
 }
 
 .error-icon {
   font-size: 4rem;
-  margin-bottom: 2rem;
+ 
 }
 
 .error-content h1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: #1e293b;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
+ 
 }
 
-.error-message {
-  font-size: 1.2rem;
-  color: #64748b;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
+
 
 .client-note {
   color: #94a3b8;
   font-style: italic;
-  margin-bottom: 2.5rem;
+
   font-size: 1rem;
 }
 
@@ -54,7 +42,7 @@
 .search-section h3 {
   font-size: 1.25rem;
   color: #1e293b;
-  margin-bottom: 1.5rem;
+ 
   font-weight: 600;
 }
 

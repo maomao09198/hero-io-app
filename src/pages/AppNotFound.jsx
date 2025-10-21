@@ -18,14 +18,14 @@ const AppNotFound = () => {
           </p>
          
           
-          <div className="search-section">
+         
            
             <div className="search-links">
              
               <Link to="/" className="search-link">Go Back</Link>
               
             </div>
-          </div>
+          
         </div>
       </div>
     </div>
