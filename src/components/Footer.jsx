@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
           
          <div className="footer-section">
-  <h4>Follow Us</h4>
+  <h4>Social Links</h4>
   <div className="social-links">
     <a href="#" aria-label="Twitter" className="social-link twitter">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="#f0f2f3ff">

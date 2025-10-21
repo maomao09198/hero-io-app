@@ -29,12 +29,15 @@ const AllApps = () => {
         {/* Header Section */}
         <section className="apps-header">
           <div className="header-content">
-            <h1>Our All Applications</h1>
-            <p>Explore all rights on the balance cardboard by us. We could be follows.</p>
+            
+            
           </div>
+          <h1>Our All Applications</h1>
+          <p>Explore All Apps on the Market developed by us. We code for Millions</p>
           <div className="apps-count">
             ({filteredAndSortedApps.length}) Apps Found
           </div>
+          
         </section>
 
         {/* Search and Filter Section */}

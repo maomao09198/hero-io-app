@@ -57,21 +57,21 @@ const Home = () => {
         
         <div className="trust-stats">
           <div className="stat-item">
-            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>Countries</span>
+            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>Total Downloads</span>
             <span className="stat-number" style={{ color: "#f6f4f9ff" }}>29.6M</span>
-            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>Active Users</span>
+            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>21% more than last month</span>
           </div>
           
           <div className="stat-item">
-            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>Countries</span>
+            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>Total Reviews</span>
             <span className="stat-number" style={{ color: "#f6f4f9ff" }}>900K</span>
-            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>5-Star Reviews</span>
+            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>46% more than last month</span>
           </div>
           
           <div className="stat-item">
-            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>Countries</span>
+            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>Active Apps</span>
             <span className="stat-number" style={{ color: "#f6f4f9ff" }}>132+</span>
-            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>Countries</span>
+            <span className="stat-label" style={{ color: "#f6f4f9ff" }}>31 more will Launch</span>
           </div>
         </div>
       </section>
@@ -82,7 +82,7 @@ const Home = () => {
           <div className="section-header">
             <div className="section-title" style={{ textAlign: "center", width: "100%" }}>
               <h2>Trending Apps</h2>
-              <p>Explore all Trending Apps on the Internet coming back to us!</p>
+              <p>Explore All Trending Apps on the Market developed by us</p>
             </div>
           </div>
           
@@ -98,19 +98,31 @@ const Home = () => {
                     style={{ display: "flex", justifyContent: "space-between", gap: "10px" }}
                   >
                     {/* Downloads Box */}
-                    <span
-                      className="downloads"
-                      style={{
-                        backgroundColor: "#f5f5f5",
-                        padding: "5px 10px",
-                        borderRadius: "8px",
-                        fontSize: "14px",
-                      }}
-                    >
-                      {app.downloads >= 1000000
-                        ? (app.downloads / 1000000).toFixed(1) + "M"
-                        : (app.downloads / 1000).toFixed(1) + "K"}
-                    </span>
+           <span
+  className="downloads"
+  style={{
+    backgroundColor: "#f5f5f5",
+    padding: "5px 10px",
+    borderRadius: "8px",
+    fontSize: "14px",
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "6px"
+  }}
+>
+  <svg 
+    width="16" 
+    height="16" 
+    viewBox="0 0 24 24" 
+    fill="#22C55E" 
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M12 3a1 1 0 0 1 1 1v9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 13.586V4a1 1 0 0 1 1-1zm-7 14a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2H5z"/>
+  </svg>
+  {app.downloads >= 1000000
+    ? (app.downloads / 1000000).toFixed(1) + "M"
+    : (app.downloads / 1000).toFixed(1) + "K"}
+</span>
 
                     {/* Rating Box */}
                     <span
@@ -134,7 +146,7 @@ const Home = () => {
             className="view-all-btn"
             style={{ display: "block", margin: "0 auto", width: "fit-content" }}
           >
-            View All
+            Show All
           </Link>
         </div>
       </section>
